@@ -1,0 +1,36 @@
+name: capacitacion_app
+description: "App de capacitación empresarial con Flutter y Firebase"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase Dependencies (versiones actuales estables)
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  
+  # State Management
+  provider: ^6.1.5
+  
+  # UI Dependencies
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+# Forzar versiones específicas para evitar conflictos
+dependency_overrides:
+  firebase_auth_web: ^5.12.0  # Versión actual que tienes
+  web: ^0.5.1
+
+flutter:
+  uses-material-design: true
